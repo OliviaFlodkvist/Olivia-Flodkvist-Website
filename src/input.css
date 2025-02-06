@@ -1,3 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Michroma", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+@layer components {
+    .grain-overlay {
+        opacity: 0.9;
+        mix-blend-mode: overlay;
+        animation: grain-animation 3s infinite;
+    }
+
+    @keyframes grain-animation {
+        0% { background-position: 0 0; }
+        100% { background-position: 100px 100px; }
+    }
+
+    .underline-animation-left::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color: currentColor;
+        transition: width 0.6s ease;
+      }
+      
+      .underline-animation-left:hover::after {
+        width: 100%;
+      }
+
+      .underline-animation-right::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0%;
+        height: 3px;
+        background-color: currentColor;
+        transition: width 0.6s ease;
+      }
+      
+      .underline-animation-right:hover::after {
+        width: 100%;
+      }
+
+      .hover-target {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    .image-container {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    
+    /* On hover of the "hover-container", hide paragraph and show images */
+    .hover-container:hover .hover-target {
+        opacity: 0;
+    }
+    
+    .hover-container:hover .image-container {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .zoom-image {
+        transform: scale(2); /* Adjust scale value to control zoom level */
+        transform-origin: center; /* Keeps zoom centered on the image */
+    }
+
+}

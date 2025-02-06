@@ -3,13 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>RESUME</title>
     <link href="output.css" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-red-700 relative h-screen">
-        <h1 class = "absolute top-1 right-1/2">RESUME</h1>
+    <div class="bg-yellow-100 relative" style= "height: 172vh">
+        <img src="/Assets/4829870_arrow_back_left_icon.png" alt="Back Button" onclick="goBack()" class="cursor-pointer w-12 h-12 hover:opacity-75 transition-opacity duration-200"/>
+        <div class="text-6xl text-red-700 top-8 absolute left-1/2 -translate-x-1/2">RESUME</div>
+        <div class="absolute top-32 left-1/2 -translate-x-1/2 h-132 flex flex-col items-center gap-24 w-screen">
+            <div class="flex-1 text-4xl text-red-700 flex flex-col gap-8">
+                <div>WORK</div>
+                <p class = "text-xs text-wrap" >Cashier
+                    ICA Vanadis, Stockholm
+                    November 2019 — August 2020
+                 </p>
+                 <p class = "text-xs text-wrap">
+                    Store Employee
+                    ICA Nära Essingen, Stockholm
+                    February 2021 — August 2021
+                 </p>
+            </div>
+            <div class="flex-1 text-4xl text-red-700 flex flex-col gap-8">
+                <div>EDUCATION</div>
+                <p class = "text-xs text-wrap">
+                    Natural Science Program, Norra Real, Stockholm
+                    September 2016 — June 2019
+                </p>
+                <p class = "text-xs text-wrap">
+                    Philosophy, Dalarna University
+                    August 2020 — January 2021
+                </p>
+                <p class = "text-xs text-wrap font-black">
+                    Master's Program in Media Technology, Royal Institute of Technology, Stockholm
+                    August 2021 — Present
+                </p>
+            </div>
+            <div class="flex-1 text-4xl text-red-700 flex flex-col gap-8">
+                <div>ADDITIONAL EXPERIENCES</div>
+                <p class = "text-xs text-wrap">
+                    Media Technology Club Management
+                    Spring 2022 - Spring 2024
+                </p>
+                <p class = "text-xs text-wrap">
+                    Media Technology Reception
+                    Spring and Summer 2022
+                </p>
+                <p class = "text-xs text-wrap">
+                    Graphic Design Course, University of Arts London 
+                    August 2024</p>
+            </div>
+            <div class="flex-1 text-4xl text-red-700 flex flex-col gap-8">
+                <div>LANGUAGES</div>
+                <p class = "text-xs text-wrap">
+                    Swedish - Native,
+                    English - Fluent,
+                    French & Spanish - Basic knowledge
+                </p>
+            </div>
+            <div class="flex-1 flex flex-col gap-4">
+                <div class="flex-1 flex justify-center text-4xl text-red-700">SKILLS</div>
+                <div class="flex-1 flex flex-row">
+                    <div class="flex-1 flex justify-center text-xl">
+                        <div class="text-center text-red-700">
+                            <p class="text-2xl">Hard skills</p>
+                            Programming (Python, Java, C++, JavaScript, HTML/CSS) <br>
+                            Frontend Web Development <br>
+                            UX/UI Design <br>
+                            Human Computer Interaction <br>
+                            Graphic Design <br>   
+                        </div>
+                    </div>
+                    <div class="flex-1 flex justify-center text-xl">
+                        <div class="text-center text-red-700">
+                            <p class="text-2xl">Soft skills</p>
+                            Communication <br>
+                            Problem Solving <br>
+                            Creativity <br>
+                            Meticulousness <br>
+                            Teamwork <br>
+                            Flexibility <br>
+                            Time Management <br>
+                            Analytical Thinking <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
     </div>
-    
+    <div class = "fixed left-12 bottom-4 flex flex-col gap-4 items-center transform -translate-x-1/2">
+        <a href="https://github.com/OliviaFlodkvist?tab=repositories" target="_blank" ><img class ="flex-1 h-10 w-26" src="/Assets/GitHub Symbol Red.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/olivia-flodkvist-115779205/" target="_blank" ><img class ="flex-1 h-10 w-26" src="/Assets/LinkedIn Symbol Red.png" alt=""></a>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
