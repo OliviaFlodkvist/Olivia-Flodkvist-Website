@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./src/input.css -o ./src/output.css",
+    "build": "tailwindcss -i ./src/input.css -o ./public/output.css",
     "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch & npx live-server ./src"
   },
   "keywords": [],
