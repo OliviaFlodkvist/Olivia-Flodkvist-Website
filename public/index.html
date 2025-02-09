@@ -17,6 +17,8 @@
             <source src="Assets/blue-logo-glitch.mp4" type="video/mp4"> 
         </video> 
 
+        <img id="fallback-image" src="Assets/logo_img.png" class="h-[1000px] w-[1000px] absolute top-1/2 -translate-y-1/2 hidden" alt="Fallback Image">
+
             <p class="text-sm text-red-700 font-black h-32 w-96 absolute -translate-y-1/2 text-center text-wrap bottom-4 ">
                 Hi there! I'm a fourth-year engineering student in Media Technology. I love exploring the intersection of technology and human interaction—whether through programming, Human-Computer Interaction, or UX design and research. Currently looking for a job/internship for summer 2025.
             </p>
@@ -30,6 +32,17 @@
             <a href="https://www.linkedin.com/in/olivia-flodkvist-115779205/" target="_blank" ><img class ="flex-1 h-6 lg:h-10 lg:w-26" src="Assets/LinkedIn Symbol Red.png" alt=""></a>
         </div>
     </div>
+    <script>
+        // Error handling for the video
+        const video = document.getElementById("intro-video");
+        const fallbackImage = document.getElementById("fallback-image");
+    
+        video.onerror = function () {
+            console.error("Error loading video, showing fallback image.");
+            video.style.display = "none";
+            fallbackImage.classList.remove("hidden");
+        };
+    </script>
 </body>
 </html>
 
