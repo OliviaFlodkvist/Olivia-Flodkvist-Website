@@ -6,12 +6,12 @@
     <title>RESUME</title>
     <link href="output.css" rel="stylesheet">
 </head>
-<body>
-    <div class="bg-yellow-100 relative" style= "height: 172vh">
+<body class="bg-yellow-100 min-h-screen">
+    <div class="relative w-full">
         <img src="Assets/4829870_arrow_back_left_icon.png" alt="Back Button" onclick="goBack()" class="cursor-pointer w-12 h-12 hover:opacity-75 transition-opacity duration-200"/>
-        <div class="text-6xl text-red-700 top-8 absolute left-1/2 -translate-x-1/2">RESUME</div>
-        <div class="absolute top-32 left-1/2 -translate-x-1/2 h-132 flex flex-col items-center gap-24 w-screen">
-            <div class="flex-1 text-4xl text-red-700 flex flex-col gap-8">
+        <div class="text-4xl lg:text-6xl text-red-700 top-12 lg:top-8 absolute left-1/2 -translate-x-1/2">RESUME</div>
+        <div class="absolute top-32 left-1/2 -translate-x-1/2 h-132 flex flex-col items-center gap-20 lg:gap-24 w-screen">
+            <div class="flex-1 text-2xl lg:text-4xl text-red-700 flex flex-col gap-4 lg:gap-8">
                 <div>WORK</div>
                 <p class = "text-xs text-wrap" >Cashier
                     ICA Vanadis, Stockholm
@@ -23,7 +23,7 @@
                     February 2021 — August 2021
                  </p>
             </div>
-            <div class="flex-1 text-4xl text-red-700 flex flex-col gap-8">
+            <div class="flex-1 text-2xl lg:text-4xl text-red-700 flex flex-col gap-8">
                 <div>EDUCATION</div>
                 <p class = "text-xs text-wrap">
                     Natural Science Program, Norra Real, Stockholm
@@ -38,7 +38,7 @@
                     August 2021 — Present
                 </p>
             </div>
-            <div class="flex-1 text-4xl text-red-700 flex flex-col gap-8">
+            <div class="flex-1 text-2xl lg:text-4xl text-red-700 flex flex-col gap-8">
                 <div>ADDITIONAL EXPERIENCES</div>
                 <p class = "text-xs text-wrap">
                     Media Technology Club Management
@@ -52,7 +52,7 @@
                     Graphic Design Course, University of Arts London 
                     August 2024</p>
             </div>
-            <div class="flex-1 text-4xl text-red-700 flex flex-col gap-8">
+            <div class="flex-1 text-2xl lg:text-4xl text-red-700 flex flex-col gap-8">
                 <div>LANGUAGES</div>
                 <p class = "text-xs text-wrap">
                     Swedish - Native,
@@ -61,19 +61,19 @@
                 </p>
             </div>
             <div class="flex-1 flex flex-col gap-4">
-                <div class="flex-1 flex justify-center text-4xl text-red-700">SKILLS</div>
+                <div class="flex-1 flex justify-center text-2xl lg:text-4xl text-red-700">SKILLS</div>
                 <div class="flex-1 flex flex-row">
-                    <div class="flex-1 flex justify-center text-xl">
+                    <div class="flex-1 flex justify-center text-sm lg:text-xl">
                         <div class="text-center text-red-700">
                             <p class="text-2xl">Hard skills</p>
-                            Programming (Python, Java, C++, JavaScript, HTML/CSS) <br>
+                            Programming (Python, Java, C++, JavaScript, HTML/CSS) <br> 
                             Frontend Web Development <br>
                             UX/UI Design <br>
                             Human Computer Interaction <br>
                             Graphic Design <br>   
                         </div>
                     </div>
-                    <div class="flex-1 flex justify-center text-xl">
+                    <div class="flex-1 flex justify-center text-sm lg:text-xl">
                         <div class="text-center text-red-700">
                             <p class="text-2xl">Soft skills</p>
                             Communication <br>
@@ -84,15 +84,17 @@
                             Flexibility <br>
                             Time Management <br>
                             Analytical Thinking <br>
+                            <br>
+                            <br>
                         </div>
                     </div>
                 </div>
             </div>
             
     </div>
-    <div class = "fixed left-12 bottom-4 flex flex-col gap-4 items-center transform -translate-x-1/2">
-        <a href="https://github.com/OliviaFlodkvist?tab=repositories" target="_blank" ><img class ="flex-1 h-10 w-26" src="Assets/GitHub Symbol Red.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/olivia-flodkvist-115779205/" target="_blank" ><img class ="flex-1 h-10 w-26" src="Assets/LinkedIn Symbol Red.png" alt=""></a>
+    <div class = "fixed lg:left-12 left-6 bottom-4 flex flex-col lg:gap-4 gap-2 items-center transform -translate-x-1/2 z-50">
+        <a href="https://github.com/OliviaFlodkvist?tab=repositories" target="_blank" ><img class ="flex-1 h-6 lg:h-10 lg:w-26" src="Assets/GitHub Symbol Red.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/olivia-flodkvist-115779205/" target="_blank" ><img class ="flex-1 h-6 lg:h-10 lg:w-26" src="Assets/LinkedIn Symbol Red.png" alt=""></a>
     </div>
     <script src="app.js"></script>
 </body>

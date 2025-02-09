@@ -6,37 +6,39 @@
     <title>PROJECTS</title>
     <link href="output.css" rel="stylesheet">
 </head>
-<body>
-    <div class="bg-yellow-100 relative h-screen" >
+<body class="bg-yellow-100 min-h-screen w-screen">
+    <div class="relative h-screen w-screen">
         <img src="Assets/4829870_arrow_back_left_icon.png" alt="Back Button" onclick="goBack()" class="cursor-pointer w-12 h-12 hover:opacity-75 transition-opacity duration-200"/>
-        <h1 class = "absolute text-6xl text-red-700 left-1/2 -translate-x-1/2">PROJECTS</h1>
+        <h1 class = "absolute text-4xl lg:text-6xl text-red-700 left-1/2 -translate-x-1/2">PROJECTS</h1>
 
-        <div class="relative flex left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-3/4 h-1/2">
+        <div class="relative flex left-1/2 -translate-x-1/2 top-1/3 lg:top-1/2 -translate-y-1/2 w-4/5 h-1/2">
             <!-- Previous Button -->
-            <button id="prev-btn" class="left-0 bg-red-500 text-white p-4 rounded-full hover:bg-red-600 transition-all duration-200 text-3xl">
+            <button id="prev-btn" class="left-0 p-4 rounded-full hover:text-red-700 transition-all duration-200 text-3xl">
                 ⬅
             </button>
         
             <!-- Carousel Content -->
-            <div id="carousel" class="w-full flex flex-col items-center justify-center">
-                <img id="carousel-image" class="l-1/2 h-auto object-cover" src="Assets/Baston Logga Portfolio.png" alt="Project Image">
-                <p id="carousel-text" class="l-1/2 text-center text-lg">Description of project 1.</p>
+            <div id="carousel" class="lg:w-full flex flex-col lg:items-center lg:justify-center">
+                <img id="carousel-image" class="h-auto object-cover" src="Assets/Baston Logga Portfolio.png" alt="Project Image">
+                <p id="carousel-text" class="text-center text-lg">Description of project 1.</p>
             </div>
         
             <!-- Next Button -->
-            <button id="next-btn" class="right-0 bg-red-500 text-white p-4 rounded-full hover:bg-red-600 transition-all duration-200 text-3xl">
+            <button id="next-btn" class="right-0 text-black p-4 rounded-full hover:text-red-700 transition-all duration-200 text-3xl">
                 ⮕
             </button>
+
         </div>
         
-    <div class = "fixed left-12 bottom-4 flex flex-col gap-4 items-center transform -translate-x-1/2">
-        <a href="https://github.com/OliviaFlodkvist?tab=repositories" target="_blank" ><img class ="flex-1 h-10 w-26" src="Assets/GitHub Symbol Red.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/olivia-flodkvist-115779205/" target="_blank" ><img class ="flex-1 h-10 w-26" src="Assets/Linkedin Symbol Red.png" alt=""></a>
-    </div>
+        <div class = "fixed lg:left-12 left-6 bottom-4 flex flex-col lg:gap-4 gap-2 items-center transform -translate-x-1/2 z-50">
+            <a href="https://github.com/OliviaFlodkvist?tab=repositories" target="_blank" ><img class ="flex-1 h-6 lg:h-10 lg:w-26" src="Assets/GitHub Symbol Red.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/olivia-flodkvist-115779205/" target="_blank" ><img class ="flex-1 h-6 lg:h-10 lg:w-26" src="Assets/LinkedIn Symbol Red.png" alt=""></a>
+        </div>
+
 
     <script>
         const images = [
-        {
+    {
         title: "Baston Artist Website (Ongoing Project)",  
         src: [
             "Assets/Baston Home Page 2.png",
@@ -44,8 +46,10 @@
             "Assets/Baston Concert Films.png"
         ],
         text: 'Currently designing and developing a website for the artist Baston. Using wireframing, visual design, and front-end development, implementing HTML, CSS, and JavaScript. Applied skills in UI/UX design, web design, creative direction, coding and graphic design.',
-        maxWidth: "300px", 
-        maxHeight: "300px" 
+        maxWidthLg: "300px", 
+        maxHeightLg: "300px",
+        maxWidthSm: "250px", // Change to your preferred value
+        maxHeightSm: "250px" 
     },
     {
         title: "Vegan Cookbook App (Group Project)", 
@@ -55,9 +59,10 @@
             "Assets/Vegan cookbook 3.png"
         ],
         text: 'Designed and prototyped a Vegan Cookbook App tailored for Young Adult Vegans. Led user research, including interviews, usability testing and data analysis. Developed a high-fidelity prototype in Figma.',
-        maxWidth: "350px",  
-        maxHeight: "350px" 
-        
+        maxWidthLg: "350px",  
+        maxHeightLg: "350px",
+        maxWidthSm: "350px",
+        maxHeightSm: "300px"
     },
     {
         title: "Gainomax Brand Identity Redesign", 
@@ -69,8 +74,10 @@
             "Assets/Gainomax Webpage.png"
         ],
         text: 'Conceptualized and designed a new brand identity for Gainomax. Developed a logo redesign, refined color palette, and created packaging mockups to align with the brand’s ethos. Applied skills in graphic design, branding, visual storytelling, typography and packaging design, utilizing tools such as Adobe Photoshop and Figma. (Note: This is a personal project and is not affiliated with or endorsed by Gainomax.)',
-        maxWidth: "230px",  
-        maxHeight: "230px" 
+        maxWidthLg: "230px",  
+        maxHeightLg: "230px",
+        maxWidthSm: "200px",
+        maxHeightSm: "200px"
     },
     {
         title: "Movie Planet Website (Group Project) (Ongoing Project)",  
@@ -79,8 +86,10 @@
             "Assets/Movie Planet Search.png",
         ],
         text: 'Further developing our group project; a dynamic movie website that helps users decide what to watch through an interactive "This or That" game and a search functionality. This project demonstrates skills in API integration, web development, UI/UX design, problem-solving, and collaborative teamwork.',
-        maxWidth: "450px",  
-        maxHeight: "450px" 
+        maxWidthLg: "450px",  
+        maxHeightLg: "450px",
+        maxWidthSm: "250px", // Change to your desired small-screen size
+        maxHeightSm: "250px"
     },
     {
         title: "Interactive Beer Pong Game (Group Project)",
@@ -88,10 +97,11 @@
             "Assets/Beer Pong game.png",
         ],
         text: 'Developed an interactive beer pong game in Unity using C#. Conducted user testing, data collection, and statistical analysis to evaluate usability, performance, and user preferences. Applied skills in UX research, interaction design, prototyping, data analysis, and human-computer interaction (HCI) while collaborating in a team-based development environment.', 
-        maxWidth: "350px",  
-        maxHeight: "350px" 
-     },
-    
+        maxWidthLg: "350px",  
+        maxHeightLg: "350px",
+        maxWidthSm: "250px",
+        maxHeightSm: "250px"
+    },
 ];
 
 let currentIndex = 0;
@@ -100,27 +110,29 @@ function updateCarousel() {
     const carouselContainer = document.getElementById('carousel');
     carouselContainer.innerHTML = ''; 
 
-   
     const project = images[currentIndex];
-
 
     const title = document.createElement('h2');
     title.textContent = project.title;
-    title.classList.add('text-2xl', 'font-black', 'text-center', 'text-red-700');
+    title.classList.add('text-2xl', 'font-black', 'lg:text-center', 'text-red-700');
     title.style.marginBottom = '70px';
     carouselContainer.appendChild(title);
 
-
     const imageContainer = document.createElement('div');
-    imageContainer.classList.add('flex', 'flex-row', 'gap-4', 'justify-center', 'items-center', 'w-full');
+    imageContainer.classList.add('flex', 'flex-col', 'lg:flex-row', 'lg:gap-4', 'justify-center', 'items-center', 'lg:w-full');
     imageContainer.style.marginBottom = '70px';
 
+    // Check screen width
+    const isLargeScreen = window.matchMedia("(min-width: 1024px)").matches;
 
     project.src.forEach(imageSrc => {
         const img = document.createElement('img');
         img.src = imageSrc;
-        img.style.maxWidth = project.maxWidth;  
-        img.style.maxHeight = project.maxHeight; 
+        
+        // Apply correct size based on screen width
+        img.style.maxWidth = isLargeScreen ? project.maxWidthLg : project.maxWidthSm;
+        img.style.maxHeight = isLargeScreen ? project.maxHeightLg : project.maxHeightSm;
+        
         img.classList.add(
             'object-contain', 
             'transition-all', 
@@ -134,11 +146,10 @@ function updateCarousel() {
 
     carouselContainer.appendChild(imageContainer);
 
-    
     const carouselText = document.createElement('p');
     carouselText.textContent = project.text;
-    carouselText.classList.add('text-lg', 'text-center', 'text-red-700', 'text-sm');
-    carouselText.style.marginTop = '24px';
+    carouselText.classList.add('text-lg', 'lg:text-center', 'text-red-700', 'text-sm');
+    carouselText.style.marginTop = '12px';
     carouselContainer.appendChild(carouselText);
 
     if (project.title === "Vegan Cookbook App (Group Project)") { 
@@ -146,14 +157,11 @@ function updateCarousel() {
         link.href = "https://www.figma.com/design/dhC71xLkCAOdoizyGmL4Rx/Group-5-Hi-Fi-Prototype?node-id=0-1&t=oLGi3vZmrDk82y3h-1";
         link.target = "_blank";
         link.textContent = "Link to project in Figma";
-        link.classList.add('text-red-700', 'underline', 'hover:text-blue-700', 'text-center', 'block');
+        link.classList.add('text-red-700', 'underline', 'hover:text-blue-700', 'text-center', 'lg:block');
         link.style.marginTop = '20px';
         carouselContainer.appendChild(link);
     }
 }
-
-
-
 
 // Functions to move between slides
 function prevSlide() {
@@ -166,16 +174,15 @@ function nextSlide() {
     updateCarousel();
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("prev-btn").addEventListener("click", prevSlide);
     document.getElementById("next-btn").addEventListener("click", nextSlide);
 });
 
-
 updateCarousel();
 
-
+// Ensure images update on screen resize
+window.addEventListener("resize", updateCarousel);
 
     </script>
 
