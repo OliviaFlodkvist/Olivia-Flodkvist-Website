@@ -723,6 +723,10 @@ html {
   height: 4rem;
 }
 
+.max-h-\[1000px\]{
+  max-height: 1000px;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -773,6 +777,10 @@ html {
 
 .w-4\/5{
   width: 80%;
+}
+
+.max-w-\[1000px\]{
+  max-width: 1000px;
 }
 
 .flex-1{
